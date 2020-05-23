@@ -1,0 +1,29 @@
+nav{
+    background: darkblue;
+    margin-bottom: 2em;
+    padding: 1em;
+    color: white;
+}
+
+    nav a{
+        color: white;
+    }
+
+    nav a.active{
+
+    }
+
+.nav-item{
+    margin-bottom: 0;
+    margin-right: 1em;
+}
+
+nav h1,
+nav h2,
+nav h3,
+nav h4,
+nav h5,
+nav h6,
+nav a{
+    margin-bottom: 0
+}

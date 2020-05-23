@@ -1,3 +1,10 @@
+#root{
+    min-height: 100vh;
+    padding-bottom: 10vh;
+    position: relative;
+    display: block;
+}
+
 section.background{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                 url("../images/background-header.jpg") right 25%;
@@ -70,11 +77,13 @@ img#profile{
     border: thin solid #aaa;
     border-radius: 0.5em;
     margin: 1em;
+    max-width: 30%
 }
 
 .item-box{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 3em 1em;
 }
 
@@ -89,7 +98,8 @@ img#profile{
     }
 
     .item{
-        padding: 3em 1em
+        padding: 3em 1em;
+        width: 100%
     }
 
     .big-line{
@@ -113,13 +123,7 @@ p.separate{
     margin: 2em 0;
 }
 
-footer{
-    background: darkblue;
-    min-height: 10vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
+hr{
+    width: 100%;
+    border-color: #ddd
 }

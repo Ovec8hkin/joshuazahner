@@ -1,6 +1,6 @@
 nav{
     background: darkblue;
-    margin-bottom: 2em;
+    margin-bottom: 5em;
     padding: 1em;
     color: white;
 }
@@ -9,8 +9,8 @@ nav{
         color: white;
     }
 
-    nav a.active{
-
+    nav a:hover{
+        color: #ccc;
     }
 
 .nav-item{

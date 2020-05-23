@@ -8,6 +8,7 @@ import StyledName from "../components/StyledName"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/index.css'
+import Footer from "../components/footer"
 
 const IndexPage = () => (
   <div id={"root"}>
@@ -64,9 +65,7 @@ const IndexPage = () => (
         <Link to={"/blog"} className={"btn btn-primary"}>Read the blog</Link>
       </div>
     </section>
-    <footer>
-      © 2020 - Joshua Zahner
-    </footer>
+    <Footer/>
   </div>
 )
 

@@ -34,7 +34,8 @@ const Layout = ({ children, pageTitle }) => {
         <h1 className={'display-5 bold'}>{pageTitle}</h1>
         <main>{children}</main>
       </div>
-    </>
+      <Footer />
+    </div>
   )
 }
 

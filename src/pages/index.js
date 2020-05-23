@@ -12,7 +12,7 @@ import '../css/index.css'
 
 const IndexPage = () => (
   <div id={"root"}>
-    <SEO title={"Joshua Zahner"} />
+    <SEO title={"Home"} />
     <section className={"background header"}>
       <div className={"container-fluid container-hz"}>
         <div className={"image-container"}>

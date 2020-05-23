@@ -1,0 +1,125 @@
+section.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("../images/background-header.jpg") right 25%;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 5em;
+    padding: 2em 2em;
+}
+
+.container-hz{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-vt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bold{
+    font-weight: 800
+}
+
+.light{
+    font-weight: 200;
+}
+
+.big-line{
+    line-height: 300%;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2em;
+}
+
+img.round{
+    border-radius: 50%;
+    min-width: 100px;
+    min-height: 100px;
+    background: grey;
+    margin: 0;
+}
+
+img#profile{
+    width: 200px;
+    height: 200px;
+}
+
+.item{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4em 1em;
+    font-size: 12pt;
+    border: thin solid #aaa;
+    border-radius: 0.5em;
+    margin: 1em;
+}
+
+.item-box{
+    display: flex;
+    flex-direction: row;
+    margin: 3em 1em;
+}
+
+@media (max-width: 576px){
+    .item-box{
+        flex-direction: column;
+    }
+
+    .container-hz{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item{
+        padding: 3em 1em
+    }
+
+    .big-line{
+        line-height: 150%;
+    }
+}
+
+div.separate,
+article.separate,
+section.separate{
+    margin: 3em 0
+}
+
+h1.separate,
+h2.separate,
+h3.separate,
+h4.separate,
+h5.separate,
+h6.separate,
+p.separate{
+    margin: 2em 0;
+}
+
+footer{
+    background: darkblue;
+    min-height: 10vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}

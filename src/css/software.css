@@ -38,3 +38,8 @@ img.featured{
     border-right: thin solid #aaa
 }
 
+svg{
+    display: inline;
+    margin-right: 1em;
+}
+

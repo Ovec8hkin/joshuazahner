@@ -28,9 +28,12 @@
 .item-image{
     padding: 0 0 2em 0;
     overflow-x: hidden;
+    position: relative;
 }
 
-img{
+.item-image img{
+    position: relative;
+    top: 0;
     border-radius: 0.5em 0.5em 0 0;
 }
 

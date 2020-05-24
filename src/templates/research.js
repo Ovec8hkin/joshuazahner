@@ -15,7 +15,7 @@ import {faGithub} from "@fortawesome/free-brands-svg-icons"
 
 import mintpy from '../images/mintpy.png'
 
-function SoftwarePage({data}) {
+function ResearchPage({data}) {
   const project_details = data.markdownRemark.frontmatter
 
   return (
@@ -23,16 +23,8 @@ function SoftwarePage({data}) {
       <PillTags tags={project_details.tags}/>
       <img className={"featured"} src={project_details.image.childImageSharp.sizes.src}/>
       <div className={"container-hz content-container"}>
-        <div className={"content"}
+        <div className={"content"} style={{borderRight: "none"}}
              dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}/>
-        <div className={"sidebar"}>
-          <p><span className={"bold"}>Project Dates:</span> {project_details.date}</p>
-          <p><span className={"bold"}>Project Type:</span> {project_details.type}</p>
-          <p><span className={"bold"}>Technologies:</span> Python, Dask</p>
-
-          <p><FontAwesomeIcon icon={faGlobe} /><a href={project_details.url}>Website</a></p>
-          <p><FontAwesomeIcon icon={faGithub} /><a href={project_details.repo}>GitHub Repository</a></p>
-        </div>
       </div>
     </Layout>
   )
@@ -45,13 +37,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date
-        type
-        status
-        technologies
         tags
-        url
-        repo
         image{
           childImageSharp {
             sizes(maxWidth: 1140) {
@@ -64,5 +50,5 @@ export const pageQuery = graphql`
   }
 `
 
-export default SoftwarePage
+export default ResearchPage
 

@@ -11,15 +11,15 @@ import ImageItem from "../components/ImageItem"
 
 
 
-const SoftwareIndexPage = ({data}) => (
-  <Layout pageTitle={'Software'}>
+const ResearchIndexPage = ({data}) => (
+  <Layout pageTitle={'Research'}>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu pharetra sem. Integer imperdiet nisi
       dapibus turpis volutpat sagittis. Nunc eleifend nisl nunc, quis vestibulum ante convallis eu. Sed in est in dolor
       luctus scelerisque. Phasellus lorem lorem, commodo in efficitur eu, vehicula non augue. Nam elementum nisi sed
       orci blandit, sed placerat est lacinia. Etiam fringilla euismod pellentesque.</p>
     <div className={"container-fluid container-hz separate item-box"}>
-      {data.allMarkdownRemark.edges.map(software => {
-        data = software.node.frontmatter
+      {data.allMarkdownRemark.edges.map(research => {
+        data = research.node.frontmatter
         return <ImageItem projectTitle={data.title}
                           projectBlurb={data.blurb}
                           image={data.image.childImageSharp.sizes.src}
@@ -31,13 +31,13 @@ const SoftwareIndexPage = ({data}) => (
   </Layout>
 )
 
-export default SoftwareIndexPage
+export default ResearchIndexPage
 
 export const pageQuery = graphql`
   query{
     allMarkdownRemark(
       sort: {order: ASC, fields: [frontmatter___title]}
-      filter: {fileAbsolutePath: {regex: "/(software)/"  }}
+      filter: {fileAbsolutePath: {regex: "/(research)/"  }}
     ){
       edges {
         node {

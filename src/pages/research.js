@@ -9,8 +9,6 @@ import '../css/item.css'
 
 import ImageItem from "../components/ImageItem"
 
-
-
 const ResearchIndexPage = ({data}) => (
   <Layout pageTitle={'Research'}>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu pharetra sem. Integer imperdiet nisi

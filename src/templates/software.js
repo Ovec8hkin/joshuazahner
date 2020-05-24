@@ -13,8 +13,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faGlobe} from "@fortawesome/free-solid-svg-icons"
 import {faGithub} from "@fortawesome/free-brands-svg-icons"
 
-import mintpy from '../images/mintpy.png'
-
 function SoftwarePage({data}) {
   const project_details = data.markdownRemark.frontmatter
 

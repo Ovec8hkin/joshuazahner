@@ -9,7 +9,7 @@ class NavItem extends React.Component {
   render() {
     return <li className="nav-item">
       <Link className={`nav-link ${this.props.active === this.props.title ? "bold" : ""}`}
-            to={"#"}>{this.props.title}</Link>
+            to={this.props.link}>{this.props.title}</Link>
     </li>
   }
 }
@@ -27,12 +27,12 @@ const Header = ({ active }) => (
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
-        <NavItem title={"Home"}         active={active} />
-        <NavItem title={"About"}        active={active} />
-        <NavItem title={"Research"}     active={active} />
-        <NavItem title={"Software"}     active={active} />
-        <NavItem title={"Photography"}  active={active} />
-        <NavItem title={"Blog"}         active={active} />
+        <NavItem title={"Home"}         active={active}   link={"/"}/>
+        <NavItem title={"About"}        active={active}   link={"/about"}/>
+        <NavItem title={"Research"}     active={active}   link={"/research"}/>
+        <NavItem title={"Software"}     active={active}   link={"/software"}/>
+        <NavItem title={"Photography"}  active={active}   link={"/photography"}/>
+        <NavItem title={"Blog"}         active={active}   link={"/blog"}/>
       </ul>
     </div>
   </nav>

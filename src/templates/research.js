@@ -9,12 +9,6 @@ import '../css/software.css'
 
 import PillTags from '../components/PillTags'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faGlobe} from "@fortawesome/free-solid-svg-icons"
-import {faGithub} from "@fortawesome/free-brands-svg-icons"
-
-import mintpy from '../images/mintpy.png'
-
 function ResearchPage({data}) {
   const project_details = data.markdownRemark.frontmatter
 

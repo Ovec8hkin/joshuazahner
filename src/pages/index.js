@@ -18,7 +18,7 @@ const IndexPage = () => (
         <div className={"image-container"}>
           <img className={"round"} id={"profile"} src={""} alt={""}/>
         </div>
-        <div className={"content-container"}>
+        <div>
           <h1 className={'display-4'}>
             <StyledName/>
           </h1>
@@ -31,7 +31,7 @@ const IndexPage = () => (
       <h2 className={"text-center big-line"}>specializing in the design of applications</h2>
       <h2 className={"text-center big-line"}>for use in the biological, earth, and ocean sciences.</h2>
       <Link to={"#"} className={"btn btn-primary btn-lg"}>About Me</Link>
-      <div className={"container-hz separate item-box"}>
+      <div className={"container-fluid container-hz separate item-box"}>
         <Item title={"Software"}
               short={
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +

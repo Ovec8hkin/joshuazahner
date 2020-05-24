@@ -24,6 +24,7 @@ const SoftwareIndexPage = ({data}) => (
                           projectBlurb={data.blurb}
                           image={data.image.childImageSharp.sizes.src}
                           tags={data.tags}
+                          link={data.path}
         />
       })}
     </div>
@@ -42,6 +43,7 @@ export const pageQuery = graphql`
             title
             tags
             blurb
+            path
             image {
               childImageSharp {
                 sizes(maxWidth: 1140) {

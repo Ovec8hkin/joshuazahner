@@ -9,6 +9,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
   const softwareTemplate = require.resolve(`./src/templates/software.js`)
   const researchTemplate = require.resolve(`./src/templates/research.js`)
+  const blogpostTemplate = require.resolve(`./src/templates/blog.js`)
 
   const software_result = await graphql(`
     {
@@ -46,8 +47,26 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
 
+  const blogpost_result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: {fileAbsolutePath: {regex: "/(blog)/"  }}
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
+            }
+          }
+        }
+      }
+    }
+  `)
+
   // Handle errors
-  if (software_result.errors || research_result.errors) {
+  if (software_result.errors || research_result.errors || blogpost_result.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
@@ -66,7 +85,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   research_result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
-      component: researchTemplate,
+      component: blogpostTemplate,
+      context: {
+        // additional data can be passed via context
+        slug: node.frontmatter.path,
+      },
+    })
+  })
+
+  blogpost_result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: blogpostTemplate,
       context: {
         // additional data can be passed via context
         slug: node.frontmatter.path,

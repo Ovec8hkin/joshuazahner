@@ -17,7 +17,7 @@ function BlogPage({data}) {
       <h5><b>{blog_post.date}</b></h5>
       <PillTags tags={blog_post.tags}/>
       <img className={"featured"} src={blog_post.image.childImageSharp.sizes.src}/>
-      <div className={"container-hz content-container"}>
+      <div className={"container-hz content-container text-left"}>
         <div className={"content"} style={{borderRight: "none"}}
              dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}/>
       </div>

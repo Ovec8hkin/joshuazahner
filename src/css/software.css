@@ -43,3 +43,21 @@ svg{
     margin-right: 1em;
 }
 
+@media screen and (max-width: 576px) {
+    .content{
+        border-right: none;
+    }
+
+    .content-container{
+        flex-direction: column-reverse;
+    }
+
+    .sidebar{
+        width: 100%;
+        padding: 0 0 2em;
+        border-bottom: thin solid grey;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+}
+

@@ -20,7 +20,7 @@ function SoftwarePage({data}) {
     <Layout pageTitle={project_details.title}>
       <PillTags tags={project_details.tags}/>
       <img className={"featured"} src={project_details.image.childImageSharp.sizes.src}/>
-      <div className={"container-hz content-container"}>
+      <div className={"container-hz content-container text-left"}>
         <div className={"content"}
              dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}/>
         <div className={"sidebar"}>

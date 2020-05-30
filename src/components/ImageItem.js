@@ -20,7 +20,7 @@ class ImageItem extends React.Component {
 
         </ul>
         <p>{this.props.projectBlurb}</p>
-        <Link to={this.props.link} className={"btn btn-primary btn-sm"}>Learn More</Link>
+        <Link to={this.props.link} className={"btn btn-primary btn-sm"}>{this.props.moretext || "Learn More"}</Link>
       </div>
     </div>
   }

@@ -1,0 +1,25 @@
+.featured{
+    width: 100%;
+    position: relative;
+    margin: 4em 0;
+}
+
+.feature-image{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.image-content{
+    padding: 0 0 3em 2em;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+}
+
+.date{
+    margin-bottom: 1em;
+}
+
+

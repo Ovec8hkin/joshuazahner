@@ -76,8 +76,8 @@ img#profile{
     font-size: 12pt;
     border: thin solid #aaa;
     border-radius: 0.5em;
-    margin: 1em;
     max-width: 30%;
+    margin: 1em;
 }
 
 .item-box{
@@ -99,7 +99,8 @@ img#profile{
 
     .item{
         padding: 3em 1em;
-        width: 100%
+        min-width: 100%;
+        margin: 1em 0;
     }
 
     .big-line{

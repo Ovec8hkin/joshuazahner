@@ -6,6 +6,8 @@ import SEO from "../components/seo"
 import Item from "../components/ItemBox"
 import StyledName from "../components/StyledName"
 
+import profile from '../images/profile.jpeg'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/index.css'
 import Footer from "../components/footer"
@@ -16,9 +18,9 @@ const IndexPage = () => (
   <div id={"root"}>
     <SEO title={"Home"}/>
     <section className={"background header"}>
-      <div className={"container-fluid container-hz"}>
+      <div className={"container-fluid container-hz container-center"}>
         <div className={"image-container"}>
-          <img className={"round"} id={"profile"} src={""} alt={""}/>
+          {/*<img className={"round"} id={"profile"} src={"#"} alt={""}/>*/}
         </div>
         <div>
           <h1 className={'display-4'}>
@@ -44,7 +46,7 @@ const IndexPage = () => (
         />
         <Item title={"Research"}
               short={
-                "I perform scientific research in the marine science with a specific " +
+                "I perform scientific research in the marine sciences with a specific " +
                 "focus on computational ecology."
               }
               icon={faFlask}

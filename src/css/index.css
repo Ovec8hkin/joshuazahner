@@ -25,6 +25,10 @@ section.background{
 
 }
 
+.container-center{
+    align-items: center;
+}
+
 .container-vt{
     display: flex;
     flex-direction: column;
@@ -50,13 +54,19 @@ section.background{
     justify-content: center;
     align-items: center;
     margin: 0 2em;
+    background-image: url("../images/profile.jpeg");
+    background-position: 55% 10%;
+    background-size: 220%;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
 }
 
 img.round{
     border-radius: 50%;
     min-width: 100px;
     min-height: 100px;
-    background: grey;
+    background: rgba(0, 0, 0, 0);
     margin: 0;
 }
 

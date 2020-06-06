@@ -13,7 +13,7 @@ function BlogPage({data}) {
   const blog_post = data.markdownRemark.frontmatter
 
   return (
-    <Layout pageTitle={blog_post.title}>
+    <Layout pageTitle={blog_post.title} active={"Blog"}>
       <h5><b>{blog_post.date}</b></h5>
       <PillTags tags={blog_post.tags}/>
       <img className={"featured"} src={blog_post.image.childImageSharp.sizes.src}/>

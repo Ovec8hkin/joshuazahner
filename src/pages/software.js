@@ -12,7 +12,7 @@ import ImageItem from "../components/ImageItem"
 
 
 const SoftwareIndexPage = ({data}) => (
-  <Layout pageTitle={'Software'}>
+  <Layout pageTitle={'Software'} active={"Software"}>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu pharetra sem. Integer imperdiet nisi
       dapibus turpis volutpat sagittis. Nunc eleifend nisl nunc, quis vestibulum ante convallis eu. Sed in est in dolor
       luctus scelerisque. Phasellus lorem lorem, commodo in efficitur eu, vehicula non augue. Nam elementum nisi sed

@@ -15,7 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import SEO from "./seo"
 import Footer from "./footer"
 
-const Layout = ({ children, pageTitle }) => {
+const Layout = ({ children, pageTitle, active }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,10 +26,12 @@ const Layout = ({ children, pageTitle }) => {
     }
   `)
 
+  console.log(active)
+
   return (
     <div id={"root"}>
       <SEO title={pageTitle} />
-      <Header siteTitle={data.site.siteMetadata.title} active={pageTitle}/>
+      <Header siteTitle={data.site.siteMetadata.title} active={active}/>
       <div className={"container"}>
         <h1 className={'display-5 bold'}>{pageTitle}</h1>
         <main>{children}</main>

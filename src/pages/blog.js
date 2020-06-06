@@ -46,7 +46,7 @@ class BlogIndexPage extends React.Component{
   render() {
     const first = this.props.data.allMarkdownRemark.edges[0].node.frontmatter
     return (
-      <Layout pageTitle={'From Docker to Dolphins'}>
+      <Layout pageTitle={'From Docker to Dolphins'} active={"Blog"}>
         { this.state.showFeatured ?  <FeaturedPost post_data={first} /> : null}
         <div className={"container-fluid container-hz separate item-box"}>
           {

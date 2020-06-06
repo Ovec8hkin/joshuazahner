@@ -7,10 +7,12 @@ import StyledName from "./StyledName"
 
 class NavItem extends React.Component {
   render() {
-    return <li className="nav-item">
-      <Link className={`nav-link ${this.props.active === this.props.title ? "bold" : ""}`}
-            to={this.props.link}>{this.props.title}</Link>
-    </li>
+    return (
+      <li className="nav-item">
+        <Link className={`nav-link ${this.props.active === this.props.title ? "bold" : ""}`}
+              to={this.props.link}>{this.props.title}</Link>
+      </li>
+    )
   }
 }
 

@@ -17,7 +17,7 @@ function SoftwarePage({data}) {
   const project_details = data.markdownRemark.frontmatter
 
   return (
-    <Layout pageTitle={project_details.title}>
+    <Layout pageTitle={project_details.title} active={"Software"}>
       <PillTags tags={project_details.tags}/>
       <img className={"featured"} src={project_details.image.childImageSharp.sizes.src}/>
       <div className={"container-hz content-container text-left"}>

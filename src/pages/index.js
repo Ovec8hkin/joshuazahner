@@ -10,6 +10,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/index.css'
 import Footer from "../components/footer"
 
+import {faCode, faCamera, faFlask} from "@fortawesome/free-solid-svg-icons"
+
 const IndexPage = () => (
   <div id={"root"}>
     <SEO title={"Home"}/>
@@ -37,6 +39,7 @@ const IndexPage = () => (
                 "I specialize in the development of web and desktop applications" +
                 " as well as desktop CLI software."
               }
+              icon={faCode}
               link={"/software/"}
         />
         <Item title={"Research"}
@@ -44,6 +47,7 @@ const IndexPage = () => (
                 "I perform scientific research in the marine science with a specific " +
                 "focus on computational ecology."
               }
+              icon={faFlask}
               link={"/research/"}
         />
         <Item title={"Photography"}
@@ -51,6 +55,7 @@ const IndexPage = () => (
                 "I photograph landscapes and wildlife throughout the world as an " +
                   "additional hobby."
               }
+              icon={faCamera}
               link={"/photos/"}
         />
       </div>

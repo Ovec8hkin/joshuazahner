@@ -40,3 +40,12 @@
 .container-padded{
     padding: 0 1em;
 }
+
+.svg-inline--fa{
+    margin-bottom: 0.4em;
+}
+
+p .svg-inline--fa{
+    margin-bottom: 0;
+    margin-right: 0.4em;
+}

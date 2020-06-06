@@ -40,7 +40,6 @@ img.featured{
 
 svg{
     display: inline;
-    margin-right: 1em;
 }
 
 @media screen and (max-width: 576px) {

@@ -30,26 +30,26 @@ const IndexPage = () => (
       <h2 className={"text-center big-line"}>I am a software developer</h2>
       <h2 className={"text-center big-line"}>specializing in the design of applications</h2>
       <h2 className={"text-center big-line"}>for use in the biological, earth, and ocean sciences.</h2>
-      <Link to={"#"} className={"btn btn-primary btn-lg"}>About Me</Link>
+      <Link to={"/about"} className={"btn btn-primary btn-lg"}>About Me</Link>
       <div className={"container-fluid container-hz separate item-box"}>
         <Item title={"Software"}
               short={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
-                "Nullam malesuada dignissim lorem in hendrerit."
+                "I specialize in the development of web and desktop applications" +
+                " as well as desktop CLI software."
               }
               link={"/software/"}
         />
         <Item title={"Research"}
               short={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
-                "Nullam malesuada dignissim lorem in hendrerit."
+                "I perform scientific research in the marine science with a specific " +
+                "focus on computational ecology."
               }
               link={"/research/"}
         />
         <Item title={"Photography"}
               short={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
-                "Nullam malesuada dignissim lorem in hendrerit."
+                "I photograph landscapes and wildlife throughout the world as an " +
+                  "additional hobby."
               }
               link={"/photos/"}
         />

@@ -1,0 +1,13 @@
+.social-link{
+    color: black;
+    transition: color 0.2s;
+    margin-top: 1em;
+}
+
+.social-link:hover{
+    color: deepskyblue;
+}
+
+div.inline{
+    margin-top: 1em;
+}

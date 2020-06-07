@@ -141,3 +141,7 @@ hr{
 .text-left{
     text-align: left;
 }
+
+.btn-primary{
+    background: #3480eb
+}

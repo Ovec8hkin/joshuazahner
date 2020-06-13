@@ -27,9 +27,12 @@ function SoftwarePage({data}) {
           <p><span className={"bold"}>Project Dates:</span> {project_details.date}</p>
           <p><span className={"bold"}>Project Type:</span> {project_details.type}</p>
           <p><span className={"bold"}>Technologies:</span> Python, Dask</p>
-
-          <p><FontAwesomeIcon icon={faGlobe} /><a href={project_details.url}>Website</a></p>
-          <p><FontAwesomeIcon icon={faGithub} /><a href={project_details.repo}>GitHub Repository</a></p>
+          {project_details.url &&
+            <p><FontAwesomeIcon icon={faGlobe} /><a href={project_details.url}>Website</a></p>
+          }
+          {project_details.repo &&
+            <p><FontAwesomeIcon icon={faGithub}/><a href={project_details.repo}>GitHub Repository</a></p>
+          }
         </div>
       </div>
     </Layout>

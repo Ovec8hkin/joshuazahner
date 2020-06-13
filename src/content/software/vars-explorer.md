@@ -8,8 +8,6 @@ type: "Website"
 status: "complete"
 technologies: ["Python", "Flask", "jQuery"]
 image: "../../images/vars-explorer.png"
-website: "#"
-repo: "#"
 blurb: "An online portal for query and visualization of MBARI video and image annotation data."
 ---
 

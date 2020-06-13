@@ -13,10 +13,8 @@ import ImageItem from "../components/ImageItem"
 
 const SoftwareIndexPage = ({data}) => (
   <Layout pageTitle={'Software'} active={"Software"}>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu pharetra sem. Integer imperdiet nisi
-      dapibus turpis volutpat sagittis. Nunc eleifend nisl nunc, quis vestibulum ante convallis eu. Sed in est in dolor
-      luctus scelerisque. Phasellus lorem lorem, commodo in efficitur eu, vehicula non augue. Nam elementum nisi sed
-      orci blandit, sed placerat est lacinia. Etiam fringilla euismod pellentesque.</p>
+    <p>I work on web and desktop applications for use in a variety of scientific disciplines. A significant portion of my software is developed in Python -- as it is easy for other scientists to use, deploy, and modify -- though I also use javascript for projects requiring web based components, as well as Go for server intense applications.</p>
+    <p>Below is a listing of my recent projects:</p>
     <div className={"container-fluid container-hz separate item-box"}>
       {data.allMarkdownRemark.edges.map(software => {
         data = software.node.frontmatter

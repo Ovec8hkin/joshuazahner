@@ -6,7 +6,7 @@ slug: 'vars-explorer'
 tags: ["software", "image-and-video"]
 image: "../../images/vars-explorer.png"
 url: "https://rsmas-insar.readthedocs.io/en/latest/"
-blurb: "An automated data download and analysis pipeline for remote geodetic InSAR data."
+blurb: "An online portal for query and visualization of MBARI video and image annotation data."
 ---
 
 The VARS Explorer is an online data access and visualization portal I built for the [Monterey Bay Aquarium Research Institute](http://mbari.org) Video Lab to provide online access to their video and image annotations database (VARS), during a summer internship in 2019. The site's goal was to centralize data access and analysis to VARS data for internal MBARI researchers. 

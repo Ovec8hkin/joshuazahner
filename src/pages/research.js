@@ -11,10 +11,8 @@ import ImageItem from "../components/ImageItem"
 
 const ResearchIndexPage = ({data}) => (
   <Layout pageTitle={'Research'} active={"Research"}>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu pharetra sem. Integer imperdiet nisi
-      dapibus turpis volutpat sagittis. Nunc eleifend nisl nunc, quis vestibulum ante convallis eu. Sed in est in dolor
-      luctus scelerisque. Phasellus lorem lorem, commodo in efficitur eu, vehicula non augue. Nam elementum nisi sed
-      orci blandit, sed placerat est lacinia. Etiam fringilla euismod pellentesque.</p>
+    <p>I performed active scientific research throughout my time as an undergraduate at the University of Miami. Most of my early research projects were software development focused, though I also worked extensively with various particle tracking models to resolve fine-scale oceanographic structures and model population connectivity. My current research interests include population dynamics modeling for marine fisheries and at risk marine species.</p>
+    <p>Below is a listing of some of my recent research projects:</p>
     <div className={"container-fluid container-hz separate item-box"}>
       {data.allMarkdownRemark.edges.map(research => {
         data = research.node.frontmatter

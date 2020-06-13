@@ -75,27 +75,7 @@ img#profile{
     height: 200px;
 }
 
-.item{
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 4em 1em;
-    font-size: 12pt;
-    border: thin solid #aaa;
-    border-radius: 0.5em;
-    max-width: 30%;
-    margin: 1em;
-}
 
-.item-box{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 3em 1em;
-}
 
 @media (max-width: 576px){
     .item-box{

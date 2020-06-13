@@ -25,6 +25,27 @@
     background-color: #3480eb !important;
 }
 
+.item{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4em 1em;
+    font-size: 12pt;
+    border: thin solid #aaa;
+    border-radius: 0.5em;
+    max-width: 30%;
+    margin: 1em;
+}
+
+.item-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3em 1em;
+}
+
 .item-image{
     padding: 0 0 2em 0;
     overflow-x: hidden;
@@ -32,14 +53,11 @@
 }
 
 .item-image img{
-    position: absolute;
-    top: 0;
     border-radius: 0.5em 0.5em 0 0;
 }
 
 .container-padded{
     padding: 0 1em;
-    margin-top: 11em;
 }
 
 .svg-inline--fa{
